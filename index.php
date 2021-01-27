@@ -87,37 +87,37 @@ else {
 		</form>
 
 		<div id="title_bar">
-			<div id="title">Run PHP Code</div>
+			<div id="title">Run PHP</div>
 				
-			<div class="drop"><span>File</span>
+			<div class="drop"><span>Arquivo</span>
 				<div>
 					<div class="clickable"><a data-bind="click: php_info">phpinfo()</a></div>
-					<div class="clickable"><a data-bind="click: remote_import">Remote Import...</a></div>
+					<div class="clickable"><a data-bind="click: remote_import">Importar código Remoto...</a></div>
 					<div class="clickable"><a data-bind="click: download_file">Download...</a></div>
 				</div>
 			</div
-			><div class="drop"><span>Options</span>
+			><div class="drop"><span>Opções</span>
 				<div>
 					<div class="checkbox" data-bind="my_checkbox: settings.colorize, click: change_setting" data-label="Colorize"></div>
-					<div class="checkbox" data-bind="my_checkbox: settings.run_external, click: change_setting" data-label="External Window"></div>
+					<div class="checkbox" data-bind="my_checkbox: settings.run_external, click: change_setting" data-label="Janela Externa"></div>
 					<div class="checkbox" data-bind="my_checkbox: settings.pre_wrap, click: change_setting" data-label="&lt;pre&gt; Wrap"></div>
 					<div class="subdrop">
-						Error Reporting
+						Relatório de Erros
 						<div>
-							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="none" data-label="None"></div>
+							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="none" data-label="Nenhum"></div>
 							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="fatal" data-label="Fatal"></div>
 							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="warning" data-label="Warning"></div>
 							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="deprecated" data-label="Deprecated"></div>
 							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="notice" data-label="Notice"></div>
-							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="all" data-label="All"></div>
+							<div class="radio" data-bind="my_radio: settings.error_reporting" data-value="all" data-label="Todos"></div>
 						</div>
 					</div>
 				</div>
 			</div
-			><div class="drop"><span>Themes</span>
+			><div class="drop"><span>Temas</span>
 				<div>
 					<div class="subdrop">
-						Light
+						Claros
 						<div>
 							<!-- ko foreach: themes.light -->
 								<div class="checkbox" data-bind="attr: { 'data-value': theme, 'data-label': title }, my_radio: $parent.settings.theme, click: $parent.change_setting"></div>	
@@ -125,7 +125,7 @@ else {
 						</div>
 					</div>
 					<div class="subdrop">
-						Dark
+						Escuros
 						<div>
 							<!-- ko foreach: themes.dark -->
 								<div class="checkbox" data-bind="attr: { 'data-value': theme, 'data-label': title }, my_radio: $parent.settings.theme, click: $parent.change_setting"></div>	
@@ -169,17 +169,20 @@ else {
 							</ul>
 						</div>
 					</div>
+					<div style="text-align: left;">
+						<label>README do <a href="https://github.com/ribafs/Run-PHP-Code/blob/master/README.md" target="_blank"> RUN PHP</a></label>
+					</div>
 					
 				</div>
 			</div>
 					
 			<div id="button_container">
-				<button class="button" type="button" data-bind="click: clear"><i class="fa fa-eraser"></i> &nbsp; Clear</button>
-				<button class="button" type="button" title="Run (Ctrl+Enter)" data-bind="click: run">Run &nbsp; <i class="fa fa-play"></i></button>
+				<button class="button" type="button" title="Limpar o editor" data-bind="click: clear"><i class="fa fa-eraser"></i> &nbsp; Limpar</button>
+				<button class="button" type="button" title="Executar o código (Ctrl+Enter)" data-bind="click: run">&nbsp; <i class="fa fa-play"></i></button>
 			</div>
 
 			<div style="position: relative; display: inline-block; margin-left: 10px;">
-				<span class="php_logo">php</span><input type="text" id="php_search">
+				<span class="php_logo">php</span><input type="text" id="php_search" title="Busca de funções do PHP. Abrirá a documentação no site do PHP">
 				<div id="php_search_drop"></div>
 			</div>
 		</div>

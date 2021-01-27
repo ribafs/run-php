@@ -160,7 +160,7 @@ var View_Model = function() {
 	};
 
 	self.clear = function() {
-		var answer = confirm("Are you sure you want to clear the editor?");
+		var answer = confirm("Tem certeza de que deseja limpar o editor?");
 		if (answer) { self.reset_editor(); self.run(); }
 	};
 
@@ -196,7 +196,7 @@ var View_Model = function() {
 			return url_array[url_array.length-1];
 		}
 	
-		var code_url = prompt('Always make sure imported code is safe before running!!!\n\nSupported services: gist.GitHub.com, PasteBin.com, Pastie.org\n\nEnter URL:');
+		var code_url = prompt('Sempre certifique-se de que o código importado está seguro antes de executar !!! \n\nServiços suportados: gist.GitHub.com, PasteBin.com, Pastie.org\n\nEntrar URL:');
 		if (code_url === null || code_url === '') return;
 		code_id = get_id_from_url(code_url);
 		self.editor.setValue('Loading code...');
