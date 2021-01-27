@@ -35,7 +35,7 @@ Dicas
 
 ---
 
-<a href="http://ace.ajax.org">Ace</a>  
+<a href="https://github.com/ajaxorg/ace">Ace</a>  
 Copyright (c) 2010, Ajax.org B.V.  
 Licensed under the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>
 
