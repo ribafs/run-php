@@ -18,7 +18,7 @@ Este aplicativo deve ser executado localmente e não deve ser disponibilizado pu
 
 ![screenshot](https://github.com/websiteduck/Run-PHP-Code/raw/master/img/screenshot.png)  
 
-Características
+Recursos
 --------
 - Editor de código Ace
 - Importa resumos do GitHub
