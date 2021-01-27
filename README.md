@@ -3,30 +3,33 @@ Run PHP Code
 
 <a href="https://github.com/websiteduck/Run-PHP-Code/archive/master.zip"><b>Download Run PHP Code</b></a>
 
-This script gives you the ability to quickly test snippets of PHP code locally. A local apache server is required.
+## Original em inglês
 
-- Create a folder called <b>php</b> or similar in your www folder. 
-- Extract the Run PHP Code files into it. 
-- Bookmark the URL for easy access.
-- Bonus points for cloning the repository instead and pulling once in a while.
-- <b>If you get a blank screen</b> you are probably not accessing Run PHP Code from 127.0.0.1.  This is a security feature.  Add your IP address to line 13 of index.php.
+https://github.com/websiteduck/Run-PHP-Code
 
-<b>This application is meant to be run locally and should not be made publicly accessible.</b>
+Este script oferece a capacidade de testar rapidamente fragmentos de código PHP localmente. É necessário um servidor apache local.
+
+- Crie uma pasta chamada 'php' ou similar no seu diretório web.
+- Extraia os arquivos do Run PHP Code nele.
+- Pontos de bônus por clonar/fork o repositório e puxar de vez em quando.
+- Se você receber uma tela em branco, provavelmente não está acessando Run PHP Code via 127.0.0.1. Este é um recurso de segurança. Adicione seu endereço IP à linha 13 do index.php.
+
+Este aplicativo deve ser executado localmente e não deve ser disponibilizado publicamente.
 
 ![screenshot](https://github.com/websiteduck/Run-PHP-Code/raw/master/img/screenshot.png)  
 
-Features
+Características
 --------
-- Ace code editor
-- Import gists from GitHub
-- Import pastes from PasteBin and Pastie
-- Run code in the same window or a separate window
+- Editor de código Ace
+- Importa resumos do GitHub
+- Importa pastas de PasteBin e Pastie
+- Executa o código na mesma janela ou em uma janela separada
 
-Tips
+Dicas
 ----
-- Pressing Ctrl-Enter will run your code.
-- Ace supports multiple cursors, just hold ctrl and click where you want your cursors.
-- This app comes with Font Awesome, so you can use the icons in your code. Simply include the css file: `<link rel="stylesheet" href="css/font-awesome.min.css">`
+- Pressionar Ctrl-Enter para executar seu código.
+- Ace suporta múltiplos cursores, apenas segure ctrl e clique onde você quer seus cursores.
+- Este aplicativo vem com Font Awesome, então você pode usar os ícones em seu código. Basta incluir o arquivo css: `<link rel =" stylesheet "href =" css / font-awesome.min.css ">`
 
 ### Run PHP Code utilizes the following projects:
 
