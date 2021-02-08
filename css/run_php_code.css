@@ -15,7 +15,6 @@ form { padding: 0; margin: 0; }
 }
 #title { font-size: 18px; padding: 0 15px; float: left; height: 40px; line-height: 39px; border-right: 1px solid #141414; }
 
-
 .button {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;

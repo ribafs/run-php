@@ -79,6 +79,29 @@ else {
 		<link rel="shortcut icon" href="favicon.ico" >
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/run_php_code.css">
+		
+<style>
+a {	
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  background-color: #ccc;
+}
+</style>		
 	</head>
 	<body>		
 		
@@ -93,7 +116,7 @@ else {
 				<div>
 					<div class="clickable"><a data-bind="click: php_info">phpinfo()</a></div>
 					<div class="clickable"><a data-bind="click: remote_import">Importar código Remoto...</a></div>
-					<div class="clickable"><a data-bind="click: download_file">Download...</a></div>
+					<div class="clickable"><a data-bind="click: download_file">Download...</a></div>				
 				</div>
 			</div
 			><div class="drop"><span>Opções</span>
@@ -185,6 +208,9 @@ else {
 				<span class="php_logo">php</span><input type="text" id="php_search" title="Busca de funções do PHP. Abrirá a documentação no site do PHP">
 				<div id="php_search_drop"></div>
 			</div>
+			<div style="position: relative; display: inline-block; margin-left: 10px">
+				<a href="pickr" target="_blank">Seletor de Cores</a>
+			</div>			
 		</div>
 		
 		<div id="code_div" data-bind="style: { width: code_width() + 'px' }"></div>
